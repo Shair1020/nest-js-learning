@@ -32,7 +32,6 @@ export class TasksController {
   @Get('/:id')
   getTaskById(@Param('id') id: string) {
     const task = this.taskService.getTaskById(id);
-    console.log(task);
     return {
       status: true,
       message: 'Get Task Successfully',
